@@ -9,6 +9,12 @@ Add this `import` tag within your `.gxml` file.
 
 	<import src="github.com/cheikhshift/db/gos.gxml"/>
 
+#Test it
+Make sure MongoDb is running!
+
+	go get github.com/cheikhshift/gopher-sauce-database
+	$GOPATH/bin/gopher-sauce-database
+
 #How it works
 
 ## Save object
