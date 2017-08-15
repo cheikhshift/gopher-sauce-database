@@ -15,7 +15,7 @@ Make sure MongoDb is running!
 	go get github.com/cheikhshift/gopher-sauce-database
 	$GOPATH/bin/gopher-sauce-database
 
-#How it works
+# How it works
 
 ## Save object
 
@@ -97,7 +97,7 @@ Make sure MongoDb is running!
             {{ end }}
         {{ end }}
 
-#Pipelines
+# Pipelines
 
 ### `{{  New param }}`
 Returns Struct with `Id` and `Created` initialized. 
