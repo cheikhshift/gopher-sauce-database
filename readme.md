@@ -19,7 +19,12 @@ Make sure MongoDb is running!
 
 ## Save object
 
-1. Declare a struct within your `header` tag in your `GoS` file. This struct will be named `Sample`. It is a must to have the `Id` field.
+1. Connect to database. Add this within your `main` tag in the root of your `.gxml` file.
+
+		defer dbs.Close()
+		dbs,_ = db.Connect("localhost", "dbtest")
+
+2. Declare a struct within your `header` tag in your `GoS` file. This struct will be named `Sample`. It is a must to have the `Id` field.
 
 		<struct name="Sample">
 	 		Id bson.ObjectId `bson:"_id,omitempty"`
